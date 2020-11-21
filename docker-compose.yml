@@ -1,0 +1,55 @@
+version: "3.8"
+services:
+    
+  php:
+    container_name: TdTphp7.4
+    build: ./docker/
+    depends_on:
+      - mysql
+    volumes:
+      - ./App:/var/www/html/
+      - ./docker/config/php/php.ini:/usr/local/etc/php/php.ini
+      # - ./config/php.ini:/var/www/config/php.ini 
+    labels: 
+      - "traefik.enable=true"
+      - "traefik.http.routers.php.rule=Host(`tdtalexgreg.docker.localhost`)"
+      - "traefik.http.routers.php.entrypoints=web"
+  mysql:
+    container_name: tdtalexgreg_mysql8
+    image: mysql:8.0.22
+    restart: always
+    ports:
+      - "9906:3306"
+    volumes:
+    - ./database/:/var/www/mysql/
+    environment:
+      MYSQL_DATABASE: test
+      MYSQL_USER: root
+      MYSQL_PASSWORD: 
+      MYSQL_ROOT_PASSWORD: test
+  phpmyadmin:
+    container_name: phpmyadmin
+    image: phpmyadmin:latest
+    depends_on:
+      - mysql
+    ports:
+      - 8090:80
+    environment:
+      - PMA_HOST=mysql
+      - PMA_USER=root
+      - PMA_PASSWORD=test
+      - PMA_PORT=3306
+
+  traefik:
+    container_name: tdtalexgreg_traefik
+    image: traefik:latest
+    command:
+      - "--api.insecure=true"
+      - "--providers.docker=true"
+      - "--providers.docker.exposedbydefault=false"
+      - "--entrypoints.web.address=:80"
+    ports:
+      - 80:80
+      - 8080:8080
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock:ro"
