@@ -1,0 +1,1 @@
+C:30:"PHPUnit\Runner\TestResultCache":224:{a:2:{s:7:"defects";a:2:{s:36:"App\Tests\EntiteTest::testIsPositive";i:4;s:26:"EntiteTest::testIsPositive";i:4;}s:5:"times";a:2:{s:36:"App\Tests\EntiteTest::testIsPositive";d:0.004;s:26:"EntiteTest::testIsPositive";d:0.004;}}}
