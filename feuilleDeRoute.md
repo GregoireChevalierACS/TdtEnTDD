@@ -4,3 +4,5 @@
 - Développer en TDD
 - Rentrer les scores de matches
 - Fournir un pannel de statistiques basique
+- Créer des users
+- Proposer des autorisations différentes selon les statuts (logged/guest/admin)
