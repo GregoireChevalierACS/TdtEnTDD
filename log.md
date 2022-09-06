@@ -4,3 +4,5 @@
 - Reprise du projet
 - Update de la feuille de route
 - Création du log
+- Installation de Symfony
+    - [ ] Installation de php
