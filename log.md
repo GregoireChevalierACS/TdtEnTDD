@@ -32,3 +32,6 @@
 
 *07 Septembre*
 - [x] Import projet sur ubuntu 17'
+    - [x] Création du projet avec la commande ```symfony new TDT_app --version=5.4``` pour éviter les embed
+    - [x] Suppression et recréation du symfony dans le bon dossier.
+- [x] Projet accessible et fonctionnel en symfony 5.4.12
