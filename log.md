@@ -29,3 +29,6 @@
             ```
             - [x] Création du projet avec la commande ```symfony new my_project_directory --version=5.4```
 - [x] Projet accessible depuis http://127.0.0.1:40831/ avec la commande ```symfony server:start```
+
+*07 Septembre*
+- [x] Import projet sur ubuntu 17'
