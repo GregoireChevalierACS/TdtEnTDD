@@ -60,3 +60,4 @@
         - [x] Extraction & use ```php -r "unlink('composer-setup.php');"```
         - [x] Installation de composer en global ```sudo mv composer.phar /usr/local/bin/composer```
         - [x] Utilisation de ```alias composer='/usr/local/bin/composer'``` pour appeler composer depuis partout
+    - [x] ```composer require --dev symfony/test-pack```
