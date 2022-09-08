@@ -40,7 +40,7 @@
 - [x] Création du fichier *references.md* pour consigner les sites consultés
 - [x] Consultation de la documentation symfony sur le testing
 - [ ] Installation du test-pack de symfony
-    - [ ] Résolution de la dépréciation de composer 1 en upgradant à composer 2
+    - [x] Résolution de la dépréciation de composer 1 en upgradant à composer 2
         - [x] Tentative d'upgrade avec ```composer self-update --2```
         - [ ] Résolution de l'erreur 
             ```
@@ -49,3 +49,14 @@
             - [x] Consultation de (https://stackoverflow.com/questions/37772798/unable-to-self-update-composer)
             - [x] Désinstallation de composer avec ```sudo apt-get remove composer```
             - [x] Clean suggéré par la console : ```sudo apt autoremove``` effecté
+    - [x] Installaion de composer 2
+        - [x] ```php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"```
+        - [x] ```php -r "if (hash_file('sha384', 'composer-setup.php') === '55ce33d7678c5a611085589f1f3ddf8b3c52d662cd01d4ba75c0ee0459970c2200a51f492d557530c71c15d8dba01eae') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"```
+        - [x] ```php composer-setup.php``` renvoie 
+        ```
+        Composer (version 2.4.1) successfully installed to: /home/gostoff/hub/TdtEnTDD/composer.phar
+        Use it: php composer.phar
+        ```
+        - [x] Extraction & use ```php -r "unlink('composer-setup.php');"```
+        - [x] Installation de composer en global ```sudo mv composer.phar /usr/local/bin/composer```
+        - [x] Utilisation de ```alias composer='/usr/local/bin/composer'``` pour appeler composer depuis partout
