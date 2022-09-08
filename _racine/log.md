@@ -39,3 +39,13 @@
 *08 Septembre*
 - [x] Création du fichier *references.md* pour consigner les sites consultés
 - [x] Consultation de la documentation symfony sur le testing
+- [ ] Installation du test-pack de symfony
+    - [ ] Résolution de la dépréciation de composer 1 en upgradant à composer 2
+        - [x] Tentative d'upgrade avec ```composer self-update --2```
+        - [ ] Résolution de l'erreur 
+            ```
+            Command "self-update" is not defined. 
+            ```
+            - [x] Consultation de (https://stackoverflow.com/questions/37772798/unable-to-self-update-composer)
+            - [x] Désinstallation de composer avec ```sudo apt-get remove composer```
+            - [x] Clean suggéré par la console : ```sudo apt autoremove``` effecté
