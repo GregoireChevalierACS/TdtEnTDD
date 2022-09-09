@@ -42,7 +42,7 @@
 - [ ] Installation du test-pack de symfony
     - [x] Résolution de la dépréciation de composer 1 en upgradant à composer 2
         - [x] Tentative d'upgrade avec ```composer self-update --2```
-        - [ ] Résolution de l'erreur 
+        - [x] Résolution de l'erreur 
             ```
             Command "self-update" is not defined. 
             ```
@@ -61,3 +61,14 @@
         - [x] Installation de composer en global ```sudo mv composer.phar /usr/local/bin/composer```
         - [x] Utilisation de ```alias composer='/usr/local/bin/composer'``` pour appeler composer depuis partout
     - [x] ```composer require --dev symfony/test-pack```
+
+*09 Septembre*
+- [x] Installation du test-pack de symfony
+    - [x] Utilisation de la commande ```composer require --dev symfony/test-pack```
+    - [x] Premier appel de PHPUnit ```php bin/phpunit```
+    - [x] Retour fonctionnel qui donne : 
+    ```
+    PHPUnit 9.5.24 #StandWithUkraine
+
+    No tests executed!
+    ```
