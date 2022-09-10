@@ -72,3 +72,15 @@
 
     No tests executed!
     ```
+
+*10 Septembre*
+- [x] Création du 1er test
+    - [x] Création du fichier /tests/httpResponseTest.php
+- [ ] Résolution du warning : 
+```
+1) Warning
+No tests found in class "HttpResponseTest".
+
+WARNINGS!
+Tests: 1, Assertions: 0, Warnings: 1.
+```
