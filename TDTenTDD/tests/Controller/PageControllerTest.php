@@ -7,7 +7,7 @@ use Symfony\Component\HttpFoundation\Response;
 
 class PageControllerTest extends WebTestCase{
 
-    public function TestHelloPage()
+    public function testHelloPage()
     {
         $client = static::createClient();
         $client->request('GET', '/hello');

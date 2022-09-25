@@ -94,3 +94,12 @@ Tests: 1, Assertions: 0, Warnings: 1.
 - [x] Création du PageController avec make
     - [x] Installation en local du make bundle avec ```composer require symfony/maker-bundle --dev```
         - [x] Installation du package annotations nécessaire au make avec ```composer require doctrine/annotations ```
+
+*26 Septembre* 
+- [x] Installation de twig
+- [x] Résolution du test non trouvé 
+    ```
+    No tests found in class
+    ```
+    - [x] Check de (https://stackoverflow.com/questions/27599100/phpunit-tests-gives-warning-no-tests-found-in-class)
+    - [x] Rectification de typo, la fonction TestHelloPage() doit s'écrire avec minuscule -> testHelloPage()
