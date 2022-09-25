@@ -90,3 +90,7 @@ Tests: 1, Assertions: 0, Warnings: 1.
 - [x] Installation du test-pack de symfony sur le ubuntu local
     - [x] Utilisation de la commande ```composer require --dev symfony/test-pack```
     - [x] Premier appel de PHPUnit ```php bin/phpunit```
+- [x] Écriture du test du Pagecontroller
+- [x] Création du PageController avec make
+    - [x] Installation en local du make bundle avec ```composer require symfony/maker-bundle --dev```
+        - [x] Installation du package annotations nécessaire au make avec ```composer require doctrine/annotations ```
