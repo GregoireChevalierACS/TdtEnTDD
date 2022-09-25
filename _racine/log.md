@@ -87,3 +87,6 @@ Tests: 1, Assertions: 0, Warnings: 1.
 
 *25 Septembre* 
 - [x] Pull du projet sur pcfixe
+- [x] Installation du test-pack de symfony sur le ubuntu local
+    - [x] Utilisation de la commande ```composer require --dev symfony/test-pack```
+    - [x] Premier appel de PHPUnit ```php bin/phpunit```
