@@ -84,3 +84,6 @@ No tests found in class "HttpResponseTest".
 WARNINGS!
 Tests: 1, Assertions: 0, Warnings: 1.
 ```
+
+*25 Septembre* 
+- [x] Pull du projet sur pcfixe
