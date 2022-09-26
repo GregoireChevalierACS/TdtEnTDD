@@ -108,3 +108,5 @@ Tests: 1, Assertions: 0, Warnings: 1.
 - [x] Écriture du test de contenu h1
     - [x] Écriture du code de contenu h1
 - [x] Écriture du test de réponse http unauthorized
+    - [x] Impasse faite sur l'utilisation de l'annotation IsGranted, qui renvoie l'erreur suivante : ```ErrorException: [Semantical Error] The annotation "@Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted" in method App\Controller\PageController::authentification() was never imported. Did you maybe forget to add a "use" statement for this annotation? in /home/gostoff/hub/TdtEnTDD/TDTenTDD/config/routes/../../src/Controller/ (which is being imported from "/home/gostoff/hub/TdtEnTDD/TDTenTDD/config/routes/annotations.yaml"). Make sure to use PHP 8+ or that annotations are installed and enabled.```
+    - [x] Création du twig d'auth

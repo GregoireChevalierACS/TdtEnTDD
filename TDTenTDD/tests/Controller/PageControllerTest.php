@@ -21,10 +21,17 @@ class PageControllerTest extends WebTestCase{
         $this->assertSelectorTextContains('h1', 'Titre');
     }
 
+    public function testTitleAuthPage()
+    {
+        $client = static::createClient();
+        $client->request('GET', '/auth');
+        $this->assertSelectorTextContains('h1', 'Authentification');
+    }
+
     public function testAuthPageIsRestricted()
     {
         $client = static::createClient();
-        $client->request('GET', '/hello');
+        $client->request('GET', '/auth');
         $this->assertResponseStatusCodeSame(Response::HTTP_UNAUTHORIZED);
     }
 
