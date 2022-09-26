@@ -14,4 +14,18 @@ class PageControllerTest extends WebTestCase{
         $this->assertResponseStatusCodeSame(Response::HTTP_OK);
     }
 
+    public function testTitleHelloPage()
+    {
+        $client = static::createClient();
+        $client->request('GET', '/hello');
+        $this->assertSelectorTextContains('h1', 'Titre');
+    }
+
+    public function testAuthPageIsRestricted()
+    {
+        $client = static::createClient();
+        $client->request('GET', '/hello');
+        $this->assertResponseStatusCodeSame(Response::HTTP_UNAUTHORIZED);
+    }
+
 }

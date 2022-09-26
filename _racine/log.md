@@ -103,3 +103,8 @@ Tests: 1, Assertions: 0, Warnings: 1.
     ```
     - [x] Check de (https://stackoverflow.com/questions/27599100/phpunit-tests-gives-warning-no-tests-found-in-class)
     - [x] Rectification de typo, la fonction TestHelloPage() doit s'écrire avec minuscule -> testHelloPage()
+- [x] Installation du plug in Intelephense
+- [x] Installation des snippets pour twig et html en local (ubu 20.04)
+- [x] Écriture du test de contenu h1
+    - [x] Écriture du code de contenu h1
+- [x] Écriture du test de réponse http unauthorized
